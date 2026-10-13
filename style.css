@@ -1,0 +1,80 @@
+/* Header layout */
+header,
+.header {
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+header .inner,
+.header .inner,
+header .container,
+.header .container {
+	width: min(100% - 40px, 1200px);
+	min-height: 72px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+header a,
+.header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header .logo,
+.header .logo {
+	flex-shrink: 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+header nav ul,
+.header nav ul {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav a,
+.header nav a {
+	display: block;
+	padding: 12px 0;
+	color: #374151;
+	transition: color 0.2s ease;
+}
+
+header nav a:hover,
+.header nav a:hover {
+	color: #2563eb;
+}
+
+@media (max-width: 640px) {
+	header .inner,
+	.header .inner,
+	header .container,
+	.header .container {
+		width: calc(100% - 32px);
+		min-height: 64px;
+		flex-wrap: wrap;
+		gap: 8px 16px;
+	}
+
+	header nav,
+	.header nav {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	header nav ul,
+	.header nav ul {
+		gap: 20px;
+		white-space: nowrap;
+	}
+}
