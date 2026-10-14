@@ -1,22 +1,84 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>My Profile</title>
 </head>
 <body>
-    <header>
-        <h1>my website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">My Profile</div>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
+    <main class="container main-content">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Profile</p>
+                <h1>学ぶことを、形にしていく人です</h1>
+                <p class="lead">
+                    はじめまして。私は、学んだことを実際に使える形にしていくことに楽しさを感じる学生です。<br>
+                    プログラミングやWeb制作に興味があり、日々新しい技術を学びながら、自分で考えたアイデアを形にしていくことを大切にしています。
+                </p>
+                <div class="button-row">
+                    <a href="#about" class="btn btn-primary">About me</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+
+            <aside class="hero-card">
+                <h3>基本情報</h3>
+                <ul class="profile-list">
+                    <li><span>興味</span><strong>Web制作 / プログラミング</strong></li>
+                    <li><span>目標</span><strong>役に立つものを作る</strong></li>
+                    <li><span>性格</span><strong>挑戦を楽しむ</strong></li>
+                    <li><span>価値観</span><strong>学び続けること</strong></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="about" class="info-grid">
+            <article class="card">
+                <h3>私の特徴</h3>
+                <p>
+                    少しずつでも前に進むことを大切にしています。自分がわからないことに出会ったとき、
+                    それを避けるのではなく、調べて理解しようとする姿勢を持っています。
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>好きなこと</h3>
+                <p>
+                    何かを作って完成したときの達成感が大好きです。仕組みを考えたり、見た目を整えたりする作業にやりがいを感じています。
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>これから</h3>
+                <p>
+                    まだまだ未熟な部分はありますが、挑戦を続けることで少しずつ成長していけると信じています。
+                    今後は、見やすく使いやすいものを作れる人になりたいです。
+                </p>
+            </article>
+        </section>
+
+        <section id="contact" class="about-box">
+            <h2>私について</h2>
+            <p>
+                これからも新しいことに積極的に取り組み、学びながら成長していきたいです。<br>
+                自分の考えを形にし、周りの人に伝えられるような人間になりたいと思っています。
+            </p>
+        </section>
+    </main>
 </body>
 </html>
